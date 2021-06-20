@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <title>Fari Collagen</title>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+
+    <style>
+        [aos="fade"] {
+    opacity: 0;
+    transition-property: opacity;
+  }
+  
+  [aos="fade"].aos-animate {
+    opacity: 1;
+  }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    
+</head>
+
+<body id="body">
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar-fari">
+        <div class="container">
+            <a href="#body"><img width="80" src="./assets/Logo-FARI.svg" alt="Logo"></a>
+            <button onclick="toggleMenuNavbar()" id="navbar-button-toggle-menu" class="navbar-toggler border-0"
+                type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span id="button-toggle-navbar-icon" class="bi bi-three-dots-vertical"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-4" onclick="handleSelectMenu()">
+                        <a data-scroll class="nav-link" aria-current="page" href="#why-fari">ฟาริ คอลลาเจน</a>
+                    </li>
+                    <li class="nav-item mx-4" onclick="handleSelectMenu()">
+                        <a data-scroll class="nav-link" href="#benefit-fari">คุณประโยชน์</a>
+                    </li>
+                    <li class="nav-item mx-4" onclick="handleSelectMenu()">
+                        <a data-scroll class="nav-link" href="#products-fari">ผลิตภัณฑ์</a>
+                    </li>
+                    <li class="nav-item mx-4" onclick="handleSelectMenu()">
+                        <a data-scroll class="nav-link" href="#contact-fari">ติดต่อเรา</a>
+                    </li>
+                </ul>
+                <div class="d-flex button-change-language">
+                    <button id="en-button" onclick="changeToEnLanguage()" class="en-button">EN</button>
+                    <button id="th-button" onclick="changeToThLanguage()"
+                        class="th-button current-language">ไทย</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="banner-full">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./assets/banner-full-3.png" class="d-block w-100" alt="banner">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/banner-full-2.png" class="d-block w-100" alt="banner">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/banner-full-1.png" class="d-block w-100" alt="banner">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="banner">
+        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./assets/banner-3.png" class="d-block w-100" alt="banner">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/banner-2.png" class="d-block w-100" alt="banner">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/banner-1.png" class="d-block w-100" alt="banner">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="why-fari">
+        <div class="wrapper-topic-why-fari" data-aos="fade-right" data-aos-duration="1500">
+            <div class="text-bg-1">
+                <img src="./assets/text-bg-1.png" alt="Text">
+            </div>
+            <div class="line-topic-why-fari"></div>
+            <h2>ทำไมต้อง ฟาริ คอลลาเจน</h2>
+        </div>
+        <div class="wrapper-info-why-fari">
+            <div class="container">
+                <p>FARI Collagen ผลิตจากปลาและนำเข้าจากญี่ปุ่น 100% มีค่า Bioavailability สูง สามารถดูดซึมได้เร็ว
+                    มีส่วนผสมของวิตามินซีเข้มข้นจากสวิตเซอร์แลนด์ ซึ่งทำให้การดูดซึมมีประสิทธิภาพมากขึ้น เห็นผลได้เร็ว
+                </p>
+                <div class="wrapper-info-why-fari-properties">
+                    <div class="property-item-outer" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="property-item-inner-bg">
+                            <span>ผสมกับเครื่องดื่ม <br>
+                                ทั้งร้อนและเย็น</span>
+                        </div>
+                    </div>
+                    <div class="property-item-outer" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="property-item-inner-bg">
+                            <span>ละลายน้ำเร็ว <br>
+                                ใสเหมือนน้ำเปล่า</span>
+                        </div>
+                    </div>
+                    <div class="property-item-outer" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="property-item-inner-bg">
+                            <span>ดื่มง่าย <br>
+                                กลิ่นคาวน้อยมาก</span>
+                        </div>
+                    </div>
+                    <div class="property-item-outer" data-aos="fade-up" data-aos-duration="2500">
+                        <div class="property-item-inner-bg">
+                            <span>ไม่ผสมแป้ง <br>
+                                และน้ำตาล ไขมัน 0%</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="info-why-fari-sub">ผลิตด้วยเทศโนโลยีและนวัตกรรมที่ดีที่สุดในญี่ปุ่น สะอาดปลอดภัย
+                    การันตีคุณภาพและผลลัพธ์ มีงานวิจัยรับรอง
+                    และผ่านการตรวจสอบขององค์การอาหารและยา ทั้งในไทยและต่างประเทศ</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefit-fari">
+        <div class="wrapper-topic-benefit-fari" data-aos="fade-left" data-aos-duration="1500">
+            <div class="text-bg-2">
+                <img src="./assets/text-bg-2.png" alt="Text">
+            </div>
+            <h2>คุณประโยชน์</h2>
+            <div class="line-topic-benefit-fari"></div>
+        </div>
+        <div class="wrapper-info-benefit-fari">
+            <div class="container mb-0 pb-0">
+                <div class="wrapper-info-benefit-fari-card">
+                    <div class="info-benefit-fari-card-img">
+                        <img src="./assets/benefit-img1.png" alt="Image">
+                    </div>
+                    <div class="info-benefit-fari-card-benefits">
+                        <h5>ดูแลได้ทั้งสุขภาพ และความงาม</h5>
+                        <div class="wrapper-benefit-properties">
+                            <div class="benefit-properties-item" data-aos="flip-up" data-aos-duration="1000">
+                                <img src="./assets/1.svg" alt="Benefit">
+                                <span>ผิวชุ่มชื้น เรียบเนียน <br> ใส มีออร่า</span>
+                            </div>
+                            <div class="benefit-properties-item" data-aos="flip-up" data-aos-duration="1000">
+                                <img src="./assets/2.svg" alt="Benefit">
+                                <span>ทำให้ผม <br> และเล็บแข็งแรง</span>
+                            </div>
+                            <div class="benefit-properties-item" data-aos="flip-up" data-aos-duration="1000">
+                                <img src="./assets/3.svg" alt="Benefit">
+                                <span>บำรุงกระดูก <br> และข้อต่อ</span>
+                            </div>
+                        </div>
+                        <ul class="wrapper-benefit-list">
+                            <li>คอลลาเจนช่วยกระตุ้นการสร้างเซลล์ใหม่ ผิวยืดหยุ่นขึ้น ริ้วรอยแลดูจางลง ผิวดูเปล่งปลั่ง
+                                สดใส</li>
+                            <li>หลุมสิวและแผลเป็นแลดูตื้นขึ้น</li>
+                            <li>คอลลาเจนช่วยในการสลายโปรตีน บำรุงลำไส้ และระบบทางเดินอาหาร</li>
+                            <li>ช่วยในการเผาผลาญ การสร้างมวลกล้ามเนื้อ</li>
+                            <li>ช่วยในเรื่องของการนอนหลับ และภาวะเครียดเนื่องมาจากวิตกกังวล</li>
+                            <li>ช่วยในเรื่องของหัวใจและระบบหลอดเลือด</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wrapper-info-benefit-other">
+                    <div class="info-benefit-other-item">
+                        <img src="./assets/4.svg" alt="Benefit">
+                        <span>ไม่มีแป้ง</span>
+                    </div>
+                    <div class="info-benefit-other-item">
+                        <img src="./assets/5.svg" alt="Benefit">
+                        <span>ไม่มีน้ำตาล</span>
+                    </div>
+                    <div class="info-benefit-other-item">
+                        <img src="./assets/6.svg" alt="Benefit">
+                        <span>ไม่อ้วน</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products-fari">
+        <div class="wrapper-topic-products-fari" data-aos="fade-right" data-aos-duration="1500">
+            <div class="text-bg-3">
+                <img src="./assets/text-bg-3.png" alt="Text">
+            </div>
+            <div class="line-topic-products-fari"></div>
+            <h2>ผลิตภัณฑ์ ฟาริ คอลลาเจน</h2>
+        </div>
+        <div class="wrapper-info-products-fari">
+            <div class="container">
+                
+                <div class="wrapper-info-products-card col-12">
+                    <div class="row d-flex justify-content-around" data-aos="fade-up" data-aos-duration="1000">
+
+                        <div class="products-card-item col-12 col-md-6 col-lg-4 px-0">
+                            <div class="product-promotion-icon">
+                                <img src="./assets/Promotion 1.svg" alt="Promotion">
+                            </div>
+                            <a href="/product-detail.html">
+                                <div class="wrapper-product-card-img">
+                                    <img src="./assets/product-fari-1.png" alt="Product">
+                                </div>
+                                <div class="wrapper-product-card-information">
+                                    <h3>Fari Collagen 100 G
+                                        จำนวน 1 ซอง ปริมาณ 100 กรัม
+                                        ผลิตจากปลาและนำเข้าจากญี่ปุ่น 100%</h3>
+                                    <div class="wrapper-product-information-price">
+                                        <div class="product-price-normal">
+                                            <span>890.-</span>
+                                            <div class="cross-price-normal"></div>
+                                        </div>
+                                        <span class="product-price-promotion">
+                                            590.-
+                                        </span>
+                                    </div>
+                                    <button>สั่งซื้อ</button>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="products-card-item col-12 col-md-6 col-lg-4 px-0">
+                            <div class="product-promotion-icon">
+                                <img src="./assets/Promotion 2.svg" alt="Promotion">
+                            </div>
+                            <a href="/product-detail.html">
+                                <div class="wrapper-product-card-img">
+                                    <img src="./assets/product-fari-1.png" alt="Product">
+                                </div>
+                                <div class="wrapper-product-card-information">
+                                    <h3>Fari Collagen 100 G
+                                        จำนวน 1 ซอง ปริมาณ 100 กรัม</h3>
+                                    <div class="wrapper-product-information-price">
+                                        <div class="product-price-normal">
+                                            <span>890.-</span>
+                                            <!-- <div class="cross-price-normal"></div> -->
+                                        </div>
+                                        <!-- <span class="product-price-promotion">
+                                            590.-
+                                        </span> -->
+                                    </div>
+                                    <button>สั่งซื้อ</button>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="products-card-item col-12 col-md-6 col-lg-4 px-0">
+                            <div class="product-promotion-icon">
+                                <img src="./assets/Promotion 3.svg" alt="Promotion">
+                            </div>
+                            <a href="/product-detail.html">
+                                <div class="wrapper-product-card-img">
+                                    <img src="./assets/product-fari-1.png" alt="Product">
+                                </div>
+                                <div class="wrapper-product-card-information">
+                                    <h3>Fari Collagen 100 G
+                                        จำนวน 1 ซอง ปริมาณ 100 กรัม</h3>
+                                    <div class="wrapper-product-information-price">
+                                        <div class="product-price-normal">
+                                            <span>890.-</span>
+                                            <!-- <div class="cross-price-normal"></div> -->
+                                        </div>
+                                        <!-- <span class="product-price-promotion">
+                                            590.-
+                                        </span> -->
+                                    </div>
+                                    <button>สั่งซื้อ</button>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="products-card-item col-12 col-md-6 col-lg-4 px-0">
+                            <!-- <div class="product-promotion-icon">
+                                <img src="./assets/Promotion 1.svg" alt="Promotion">
+                            </div> -->
+                            <a href="/product-detail.html">
+                                <div class="wrapper-product-card-img">
+                                    <img src="./assets/product-fari-1.png" alt="Product">
+                                </div>
+                                <div class="wrapper-product-card-information">
+                                    <h3>Fari Collagen 100 G
+                                        จำนวน 1 ซอง ปริมาณ 100 กรัม</h3>
+                                    <div class="wrapper-product-information-price">
+                                        <div class="product-price-normal">
+                                            <span>890.-</span>
+                                            <!-- <div class="cross-price-normal"></div> -->
+                                        </div>
+                                        <!-- <span class="product-price-promotion">
+                                            590.-
+                                        </span> -->
+                                    </div>
+                                    <button>สั่งซื้อ</button>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="products-card-item col-12 col-md-6 col-lg-4 px-0">
+                            <!-- <div class="product-promotion-icon">
+                                <img src="./assets/Promotion 1.svg" alt="Promotion">
+                            </div> -->
+                            <a href="/product-detail.html">
+                                <div class="wrapper-product-card-img">
+                                    <img src="./assets/product-fari-1.png" alt="Product">
+                                </div>
+                                <div class="wrapper-product-card-information">
+                                    <h3>Fari Collagen 100 G
+                                        จำนวน 1 ซอง ปริมาณ 100 กรัม</h3>
+                                    <div class="wrapper-product-information-price">
+                                        <div class="product-price-normal">
+                                            <span>890.-</span>
+                                            <!-- <div class="cross-price-normal"></div> -->
+                                        </div>
+                                        <!-- <span class="product-price-promotion">
+                                            590.-
+                                        </span> -->
+                                    </div>
+                                    <button>สั่งซื้อ</button>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="products-card-item col-12 col-md-6 col-lg-4 px-0">
+                            <!-- <div class="product-promotion-icon">
+                                <img src="./assets/Promotion 1.svg" alt="Promotion">
+                            </div> -->
+                            <a href="/product-detail.html">
+                                <div class="wrapper-product-card-img">
+                                    <img src="./assets/product-fari-1.png" alt="Product">
+                                </div>
+                                <div class="wrapper-product-card-information">
+                                    <h3>Fari Collagen 100 G
+                                        จำนวน 1 ซอง ปริมาณ 100 กรัม</h3>
+                                    <div class="wrapper-product-information-price">
+                                        <div class="product-price-normal">
+                                            <span>890.-</span>
+                                            <!-- <div class="cross-price-normal"></div> -->
+                                        </div>
+                                        <!-- <span class="product-price-promotion">
+                                            590.-
+                                        </span> -->
+                                    </div>
+                                    <button>สั่งซื้อ</button>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="prodict-total-view my-5">
+                    <button>
+                        ดูทั้งหมด
+                        <i class="bi bi-chevron-compact-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recommend-fari">
+        <div class="wrapper-topic-recommend-fari" data-aos="fade-left" data-aos-duration="1500">
+            <h2><span>ฟาริ คอลลาเจน</span> <span>กินเวลาไหนดีที่สุด เห็นผลไวที่สุด</span></h2>
+            <div class="line-topic-recommend-fari"></div>
+        </div>
+        <div class="wrapper-info-recommend">
+            <div class="container">
+                <div class="wrapper-info-recommend-card">
+                    <p class="info-recommend-line-1">หากคุณอยากให้คอลลาเจนส่งผลลัพธ์ที่มีประสิทธิภาพที่สุด
+                        ช่วงเวลาที่ดีที่สุดสำหรับทานคอลลาเจนคือหลังตื่นนอนและก่อนนอน เพราะช่วงเวลาที่ท้องว่างนั้น
+                        ระบบการทำงานของร่างกายจะสามารถดูดซึมคอลลาเจนได้อย่างเต็มประสิทธิภาพ</p>
+                    <p class="info-recommend-line-2">คอลลาเจน 1 ช้อนชา มีปริมาณ 2,500 มล. แนะนำให้ทาน วันละ 5,000 มล.
+                        หรือ 2 ช้อนชา
+                        (ซึ่งจะมีปริมาณวิตามิน C 60 มล.) ซึ่งเพียงพอต่อความจำเป็นของร่างกาย ใน 1 วัน </p>
+                    <div class="wrapper-info-recommend-method">
+
+                        <div class="wrapper-info-recommend-list" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="info-recommend-list-number">
+                                <div class="info-recommend-list-number-img1">
+                                    <img src="./assets/glass 1.svg" alt="Glass">
+                                </div>
+                                <div class="info-recommend-list-number-text">
+                                    <span>รินน้ำหรือเครื่องดื่ม <br>
+                                        ปริมาณ 250 มล.</span>
+                                    <b>1</b>
+                                </div>
+                            </div>
+                            <div class="info-recommend-list-number">
+                                <div class="info-recommend-list-number-img2">
+                                    <img src="./assets/glass 2.svg" alt="Glass">
+                                </div>
+                                <div class="info-recommend-list-number-text">
+                                    <span>ตักผลิตภัณฑ์ <br>
+                                        2 ช้อนชา</span>
+                                    <b>2</b>
+                                </div>
+                            </div>
+                            <div class="info-recommend-list-number">
+                                <div class="info-recommend-list-number-img3">
+                                    <img src="./assets/glass 3.svg" alt="Glass">
+                                </div>
+                                <div class="info-recommend-list-number-text">
+                                    <span>คนให้ละลาย <br>
+                                        พร้อมดื่มได้ทันที</span>
+                                    <b>3</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper-info-recommend-img" data-aos="fade-left" data-aos-duration="1500">
+                            <img src="./assets/recommend-img1.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-fari">
+        <div class="container">
+            <div class="wrapper-info-about-card">
+                <div class="info-about-card-item" data-aos="fade-up" data-aos-duration="1500">
+                    <h4>เกี่ยวกับ ฟา</h4>
+                    <div class="about-cross-line"></div>
+                    <p class="info-about-text-line-1">ฟา หันมาดูแลสุขภาพจริงๆ จังๆ ก็ประมาณ 6 ปีได้แล้วค่ะ
+                        ฟาเชื่อว่าสุขภาพที่ดีต้องเกิดจากการเริ่มต้นที่ดีจากภายในก่อน ฟาเริ่มศึกษา
+                        และมีโอกาสที่จะผลิตและออกมาขาย
+                        Collagen เอง ซึ่ง ราคาต้องจับต้องได้ อะไรที่เราคิดว่าดีที่สุดก็ใส่ลงไป รวมถึงวิตามินซีด้วยทำเอง
+                        ทานเอง และจะดื่มไปอีกนาน</p>
+                    <p class="info-about-text-line-2 mt-3">ฟาจึงมั่นใจว่าได้เลือกสิ่งที่ดีที่สุดสำหรับฟาเอง
+                        และลูกค้าที่เข้ามาอุดหนุนและก็ตั้งใจ
+                        อยากให้ FARI Collagen เป็นแบรนด์แรกๆ ที่มีเทคโนโลยีตลอดจนคุณภาพที่ดี
+                        ที่สุดในท้องตลาดเช่นกัน</p>
+                    <div class="about-cross-line"></div>
+                    <div class="wrapper-about-signature">
+                        <img src="./assets/Fari.svg" alt="Signature">
+                    </div>
+                </div>
+                <div class="info-about-card-item" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="wrapper-about-img">
+                        <img src="./assets/about-fa-img.png" alt="Fari">
+                    </div>
+                </div>
+                <div class="info-about-card-item">
+                    <iframe src="https://www.youtube.com/embed/aNwRQsQOyOk" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-bg-line-about-fari">
+            <img src="./assets/line-bg-about.png" alt="">
+        </div>
+    </section>
+
+    <section id="follow-ig-fari">
+        <div class="wrapper-topic-follow-ig-fari">
+            <h2>ติดตามเราได้ที่ Instagram @ FARI COLLAGEN</h2>
+        </div>
+        <section id="banner-ig" style="margin-top: 56px;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <div class="wrapper-follow-ig-img">
+                            <div class="follow-ig-img-item">
+                                <a href="https://www.instagram.com/p/CNhHr3-LFRa/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    target="_blank">
+                                    <img src="./assets/ig-1.png" alt="ig">
+                                    <div class="layer-bg-img-ig">
+                                        <i class="bi bi-instagram"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="follow-ig-img-item">
+                                <a href="https://www.instagram.com/p/CIlRDmtsGsH/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    target="_blank">
+                                    <img src="./assets/ig-2.png" alt="ig">
+                                    <div class="layer-bg-img-ig">
+                                        <i class="bi bi-instagram"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="follow-ig-img-item">
+                                <a href="https://www.instagram.com/p/CKLAgw3L1iu/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    target="_blank">
+                                    <img src="./assets/ig-3.png" alt="ig">
+                                    <div class="layer-bg-img-ig">
+                                        <i class="bi bi-instagram"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="follow-ig-img-item">
+                                <a href="https://www.instagram.com/p/CJi_h6bsTqT/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    target="_blank">
+                                    <img src="./assets/ig-4.png" alt="ig">
+                                    <div class="layer-bg-img-ig">
+                                        <i class="bi bi-instagram"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="follow-ig-img-item">
+                                <a href="https://www.instagram.com/p/CJIPq7hsuAp/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    target="_blank">
+                                    <img src="./assets/ig-5.png" alt="ig">
+                                    <div class="layer-bg-img-ig">
+                                        <i class="bi bi-instagram"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="follow-ig-img-item">
+                                <a href="https://www.instagram.com/p/CI-6lOBsbhD/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    target="_blank">
+                                    <img src="./assets/ig-6.png" alt="ig">
+                                    <div class="layer-bg-img-ig">
+                                        <i class="bi bi-instagram"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="wrapper-follow-ig-img">
+                            <div class="follow-ig-img-item">
+                                <a href="https://www.instagram.com/p/CPkxvgMNMdq/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    target="_blank">
+                                    <img src="./assets/ig-7.png" alt="ig">
+                                    <div class="layer-bg-img-ig">
+                                        <i class="bi bi-instagram"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="follow-ig-img-item">
+                                <a href="https://www.instagram.com/p/CPkxuPJtd6j/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    target="_blank">
+                                    <img src="./assets/ig-8.png" alt="ig">
+                                    <div class="layer-bg-img-ig">
+                                        <i class="bi bi-instagram"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="follow-ig-img-item">
+                                <a href="https://www.instagram.com/p/CPkxtMOttm2/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    target="_blank">
+                                    <img src="./assets/ig-9.png" alt="ig">
+                                    <div class="layer-bg-img-ig">
+                                        <i class="bi bi-instagram"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="follow-ig-img-item">
+                                <a href="https://www.instagram.com/p/CMO6sTfA8no/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    target="_blank">
+                                    <img src="./assets/ig-10.png" alt="ig">
+                                    <div class="layer-bg-img-ig">
+                                        <i class="bi bi-instagram"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="follow-ig-img-item">
+                                <a href="https://www.instagram.com/p/CI7I2KtMOHH/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    target="_blank">
+                                    <img src="./assets/ig-11.png" alt="ig">
+                                    <div class="layer-bg-img-ig">
+                                        <i class="bi bi-instagram"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="follow-ig-img-item">
+                                <a href="https://www.instagram.com/p/CIdGz2mHsPZ/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    target="_blank">
+                                    <img src="./assets/ig-12.png" alt="ig">
+                                    <div class="layer-bg-img-ig">
+                                        <i class="bi bi-instagram"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </section>
+
+    <section id="contact-fari">
+        <div class="wrapper-info-contact-card">
+            <div class="bg-info-contact-card-information">
+                <div class="info-contact-card-information" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="contact-infornation-title">
+                        ติดต่อเรา
+                    </div>
+                    <div class="contact-cross-line"></div>
+                    <div class="contact-infornation-subtitle-1">
+                        บริษัท แอคทีฟ คอลลาเจน จำกัด
+                    </div>
+                    <div class="contact-infornation-subtitle-2">
+                        132 ถ.นิพัทธ์อุทิศ 3 ต.หาดใหญ่
+                        อ.เมือง จ.สงขลา 90110
+                    </div>
+                    <div class="contact-cross-line"></div>
+                    <span><a href="tel:0842468888"><i class="bi bi-telephone-fill"></i> <img src="./assets/Tel.svg" alt=""></a></span>
+                </div>
+            </div>
+            <div class="bg-info-contact-card-form">
+                <div class="info-contact-card-form" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="contact-card-form-title">แบบฟอร์มติดต่อ</div>
+                    <form action="" class="mt-4">
+                        <div class="contact-input-text mb-4">
+                            <input type="text" placeholder="ชื่อ*">
+                        </div>
+                        <div class="contact-input-text mb-4">
+                            <input type="text" placeholder="นามสกุล*">
+                        </div>
+                        <div class="contact-input-text mb-4">
+                            <input type="text" placeholder="อีเมล*">
+                        </div>
+                        <div class="contact-input-text mb-4">
+                            <input type="text" placeholder="เบอร์โทร*">
+                        </div>
+                        <div class="contact-input-select mb-2">
+                            <select>
+                                <option value="0">เรื่องที่สนใจติดต่อ</option>
+                                <option value="1">Text</option>
+                                <option value="2">Text</option>
+                            </select>
+                        </div>
+                    </form>
+                    <span>* ข้อมูลจำเป็น</span>
+                    <button class="mt-4">ส่ง</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="follow-social-fari">
+        <a data-scroll href="#body">
+            <div class="scroll-to-top-icon">
+                <i class="bi bi-chevron-up"></i>
+                <b>TOP</b>
+            </div>
+        </a>
+        <div class="wrapper-info-follow-social">
+            <div class="info-topic-follow-social">
+                FOLLOW WITH FARI COLLAGEN
+            </div>
+            <div class="info-follow-social-lists mt-2 mb-4">
+                <a href="https://www.facebook.com/FariCollagen" target="_blank" class="follow-social-list-item">
+                    <img src="./assets/FB.svg" alt="icon">
+                </a>
+                <a href="" target="_blank" class="follow-social-list-item">
+                    <img src="./assets/Line.svg" alt="icon">
+                </a>
+                <a href="https://www.instagram.com/faricollagen/" target="_blank" class="follow-social-list-item">
+                    <img src="./assets/IG.svg" alt="icon">
+                </a>
+                <a href="https://lin.ee/jltVHyE" target="_blank" class="follow-social-list-item">
+                    <img src="./assets/Youtube.svg" alt="icon">
+                </a>
+                <a href="https://s.lazada.co.th/s.de7EQ" target="_blank" class="follow-social-list-item">
+                    <img src="./assets/Lazada.svg" alt="icon">
+                </a>
+                <a href="https://shopee.co.th/fari.collagen?smtt=0.0.9" target="_blank" class="follow-social-list-item">
+                    <img src="./assets/shopee.svg" alt="icon">
+                </a>
+            </div>
+            <div class="info-follow-social-contact">
+                <a href="tel:0842468888"><i class="bi bi-telephone-fill"></i> <img src="./assets/Tel.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright 2021 Fari Collagen All Rights Reserved. | <a target="_blank" href="http://www.belongto.com/main/index.html">by Belong-To</a></p>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+    <script>
+        const scroll = new SmoothScroll('a[href*="#"]', {
+            header: '[data-scroll-header]',
+            speed: 500,
+            speedAsDuration: true
+        });
+
+
+        function toggleMenuNavbar() {
+            const expanded = document.getElementById('navbar-button-toggle-menu').getAttribute("aria-expanded")
+            const button = document.getElementById('button-toggle-navbar-icon')
+            if (expanded === 'true') {
+                button.className = 'bi bi-x'
+            } else {
+                button.className = 'bi bi-three-dots-vertical'
+            }
+        }
+        function changeToEnLanguage() {
+            const enButton = document.getElementById('en-button')
+            const thButton = document.getElementById('th-button')
+            enButton.classList.add('current-language');
+            thButton.classList.remove('current-language');
+            handleSelectMenu()
+        }
+        function changeToThLanguage() {
+            const thButton = document.getElementById('th-button')
+            const enButton = document.getElementById('en-button')
+            thButton.classList.add('current-language');
+            enButton.classList.remove('current-language');
+            handleSelectMenu()
+        }
+        function handleSelectMenu() {
+            document.getElementById('navbar-button-toggle-menu').setAttribute("aria-expanded", "false")
+            toggleMenuNavbar()
+            document.getElementById('navbarSupportedContent').classList.remove('show')
+        }
+    </script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>
+

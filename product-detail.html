@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/product-detail.css">
+    <title>Product Deatil</title>
+
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <style>
+        .slider {
+            width: 100%;
+            margin: 100px auto;
+        }
+
+        .slick-slide {
+            margin: 0px 20px;
+        }
+
+        .slick-next:before {
+            content: url('./assets/Arrow R.svg') !important;
+        }
+
+        .slick-prev:before {
+            content: url('./assets/Arrow L.svg') !important;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .slider {
+                width: 90%;
+            }
+        }
+
+
+
+
+        .img_producto_container {
+            overflow: hidden;
+            cursor: zoom-in;
+        }
+    </style>
+
+
+</head>
+
+<body id="body">
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar-fari">
+        <div class="container">
+            <a href="/"><img width="80" src="./assets/Logo-FARI.svg" alt="Logo"></a>
+            <button onclick="toggleMenuNavbar()" id="navbar-button-toggle-menu" class="navbar-toggler border-0"
+                type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span id="button-toggle-navbar-icon" class="bi bi-three-dots-vertical"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-4">
+                        <a data-scroll class="nav-link" aria-current="page" href="/#why-fari">ฟาริ คอลลาเจน</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a data-scroll class="nav-link" href="/#benefit-fari">คุณประโยชน์</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a data-scroll class="nav-link" href="/#products-fari">ผลิตภัณฑ์</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a data-scroll class="nav-link" href="/#contact-fari">ติดต่อเรา</a>
+                    </li>
+                </ul>
+                <div class="d-flex button-change-language">
+                    <button id="en-button" onclick="changeToEnLanguage()" class="en-button">EN</button>
+                    <button id="th-button" onclick="changeToThLanguage()"
+                        class="th-button current-language">ไทย</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="products-detail">
+        <div class="container">
+            <div class="topic">
+                ผลิตภัณฑ์
+            </div>
+            <div class="wrapper-btn-path">
+                <a href="/"><i class="bi bi-chevron-double-left"></i>ย้อนกลับ</a>
+                <a href="#">อ่านต่อ<i class="bi bi-chevron-double-right"></i></a>
+            </div>
+            <div class="wrapper-product-detail-card">
+                <div class="product-detail-display-img">
+                    <!-- <div class="wrapper-display-img-head img_producto_container slider-for" data-scale="1.6">
+                        <img class="img_producto" src="./assets/img-product-display-head.png">
+                    </div> -->
+                    <div class="wrapper-display-img-head slider-for">
+                        <div class="img_producto_container" data-scale="1.6">
+                            <img class="img_producto" src="./assets/img-product-display-head.png" alt="">
+                        </div>
+                        <div class="img_producto_container" data-scale="1.6">
+                            <img class="img_producto" src="./assets/image-product-display-sub1-head.png" alt="">
+                        </div>
+                        <div class="img_producto_container" data-scale="1.6">
+                            <img class="img_producto" src="./assets/image-product-display-sub2-head.png" alt="">
+                        </div>
+                        <div class="img_producto_container" data-scale="1.6">
+                            <img class="img_producto" src="./assets/image-product-display-sub3-head.png" alt="">
+                        </div>
+                        <div class="img_producto_container" data-scale="1.6">
+                            <img class="img_producto" src="./assets/image-product-display-sub4-head.png" alt="">
+                        </div>
+                    </div>
+                    <div class="wrapper-display-img-sub slide-products-detail">
+                        <div>
+                            <img src="./assets/image-product-display-sub.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/image-product-display-sub1.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/img-product-display-sub2.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/img-product-display-sub3.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/img-product-display-sub4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-product-detail-info">
+                    <h2 class="detail-info-title">ฟาริคอลลาเจน คอลลาเจน
+                        ช่วยสร้างภูมิต้านทาน บำรุงและพื้นฟูร่างกาย ผิวสวยใส</h2>
+                    <div class="product-detail-info-topic">
+                        รายละเอียดผลิตภัณฑ์
+                    </div>
+                    <p>คอลลาเจนเปบไทด์นำเข้าจากญี่ปุ่น สกัดจากปลา + ผสมวิตามินซีเข้มข้น ดูดซึมไว
+                        ช่วยให้ผิวมีความยืดหยุ่น เต่งตึง คงความกระชับ เรียบเนียน และยังมีส่วนช่วยบำรุงเส้นผม
+                        และกระดูกข้อต่อ กระดูกอ่อน รวมถึงเนื้อเยื่อต่างๆ ผ่านการรับรองจากทั้งที่ญี่ปุ่นและการได้รับ
+                        อย. ในเรื่องคุณภาพ
+                    </p>
+                    <hr>
+                    <div class="detail-volumn">
+                        1 ซอง ปริมาณ 100 กรัม
+                    </div>
+                    <div class="wrapper-product-detail-price">
+                        <div class="product-price-normal">
+                            <span>890.-</span>
+                            <div class="cross-price-normal"></div>
+                        </div>
+                        <span class="product-price-promotion">
+                            590.-
+                        </span>
+                    </div>
+                    <div class="wrapper-detail-quantity">
+                        <label for="">จำนวน : </label>
+                        <input type="number">
+                    </div>
+                    <hr>
+                    <button>ติดต่อสั่งซื้อสินค้า</button>
+                    <div class="info-follow-social-lists-items mt-2 mb-4">
+
+                        <div class="follow-social-list-item1">
+                        </div>
+                        <div class="follow-social-list-item2">
+                        </div>
+                        <div class="follow-social-list-item3">
+                        </div>
+                        <div class="follow-social-list-item4">
+                        </div>
+                        <div class="follow-social-list-item5">
+                        </div>
+                        <div class="follow-social-list-item6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="product-details-information">
+        <div class="container">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">รายละเอียดผลิตภัณฑ์</a></li>
+                    <li><a href="#tabs-2">ส่วนประกอบ</a></li>
+                    <li><a href="#tabs-3">วิธีใช้</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <div style="color: #7b6648;" class="tabs-1-title mb-2">รายละเอียดผลิตภัณฑ์</div>
+                    <div style="color: #7b6648;" class="tabs-1-subtitle mb-2">Fari Collagen</div>
+                    <div style="color: #7b6648;" class="tabs-1-subtitle2 mb-2">เลขที่อย. 10-1-20960-5-0143</div>
+                    <p style="line-height: 28px; color: #7b6648; font-weight: 300;">ผสมวิตามินซี มีส่วนช่วยให้เซลล์ผิวหนังผลัดเซลล์
+                        ซ่อมแซมเซลล์ได้อย่างปกติ บำรุงให้ผิวดูสุขภาพดี
+                        เสริมสร้างความแข็งแรงของ เส้นผม เล็บและฟัน ช่วยลดอาการบาดเจ็บและการเสื่อมสภาพของข้อต่อ
+                        พร้อมทั้งมีส่วนผสมของวิตามินซีซึ่งเป็นสารสำคัญในการสร้างคอลลาเจน
+                        ช่วยเสริมสร้างภูมิคุ้มกันโรคหวัดได้ดี
+                        แล้วทำไมคุณถึงต้องเลือก FARI Collagen? ผลิตภัณฑ์ของเรานั้นผลิตในญี่ปุ่น 100%
+                        โดยเราได้คัดเลือกโรงงานที่ได้รับการยอมรับระดับสากลแล้วว่าสามารถผลิต
+                        คอลลาเจนเปปไทด์ที่มีคุณภาพสูงได้ FARI Collagen มีส่วนผสมของวิตามินซี 30g ต่อช้อน
+                        วิตามินที่สำคัญมากๆในการช่วยสร้างภูมิต้านทาน บำรุงและพื้นฟูร่างกาย
+                        และยังเป็นวิตามินที่ช่วยส่งเสริมการทำงานของคอลลาเจนให้มีประสิทธิภาพมากขึ้นอีกด้วยที่สำคัญเป็นคอลลาเจน
+                        100% ไม่มีน้ำตาล ไม่ผสมแป้ง ทานแล้วไม่อ้วน
+                        สามารถละลายน้ำได้ง่าย สามารถทานคู่กับเครื่องดื่มที่ชอบได้เลยค่ะ</p>
+                </div>
+                <div id="tabs-2">
+                    <p style="line-height: 28px; color: #7b6648; font-weight: 300;">Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus
+                        id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus
+                        eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse
+                        sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing.
+                        Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla.
+                        Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium
+                        posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et
+                        purus.</p>
+                </div>
+                <div id="tabs-3">
+                    <p style="line-height: 28px; color: #7b6648; font-weight: 300;">Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel
+                        vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante.
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula
+                        tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                    <p style="line-height: 28px; color: #7b6648; font-weight: 300;">Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus.
+                        Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit.
+                        Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id
+                        euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut
+                        sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula
+                        velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus.
+                        Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="detail-review">
+        <div class="wrapper-review-topic">
+            <div class="line-cross-review"></div>
+            <h2>รีวิวลูกค้า ฟาริ คอลลาเจน</h2>
+        </div>
+        <div class="container">
+            <div class="wrapper-img-to-read-review">
+                <a target="_blank"
+                    href="https://www.facebook.com/pg/FariCollagen/photos/?tab=album&album_id=234580748403635&ref=page_internal">
+                    <img src="./assets/img-review.png" alt="Review">
+                </a>
+            </div>
+        </div>
+        <div class="wrapper-line-bg-review">
+            <img src="./assets/line-bg-review.png" alt="bg">
+        </div>
+    </section>
+
+    <section id="similar-products">
+        <div class="wrapper-similar-topic">
+            <div class="line-cross-similar"></div>
+            <h2>สินค้าที่คล้ายกัน</h2>
+        </div>
+        <div class="container">
+
+            <div class="slide-product-similar slider">
+
+                <div class="products-card-item">
+                    <div class="product-promotion-icon">
+                        <img src="./assets/Promotion 1.svg" alt="Promotion">
+                    </div>
+                    <a href="#">
+                        <div class="wrapper-product-card-img">
+                            <img src="./assets/product-fari-1.png" alt="Product">
+                        </div>
+                        <div class="wrapper-product-card-information">
+                            <h3>Fari Collagen 100 G
+                                จำนวน 1 ซอง ปริมาณ 100 กรัม
+                                ผลิตจากปลาและนำเข้าจากญี่ปุ่น 100%</h3>
+                            <div class="wrapper-product-information-price">
+                                <div class="product-price-normal">
+                                    <span>890.-</span>
+                                    <div class="cross-price-normal"></div>
+                                </div>
+                                <span class="product-price-promotion">
+                                    590.-
+                                </span>
+                            </div>
+                            <button>สั่งซื้อ</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="products-card-item">
+                    <div class="product-promotion-icon">
+                        <img src="./assets/Promotion 2.svg" alt="Promotion">
+                    </div>
+                    <a href="#">
+                        <div class="wrapper-product-card-img">
+                            <img src="./assets/product-fari-1.png" alt="Product">
+                        </div>
+                        <div class="wrapper-product-card-information">
+                            <h3>Fari Collagen 100 G
+                                จำนวน 1 ซอง ปริมาณ 100 กรัม
+                                ผลิตจากปลาและนำเข้าจากญี่ปุ่น 100%</h3>
+                            <div class="wrapper-product-information-price">
+                                <div class="product-price-normal">
+                                    <span>890.-</span>
+                                    <div class="cross-price-normal"></div>
+                                </div>
+                                <span class="product-price-promotion">
+                                    590.-
+                                </span>
+                            </div>
+                            <button>สั่งซื้อ</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="products-card-item">
+                    <div class="product-promotion-icon">
+                        <img src="./assets/Promotion 3.svg" alt="Promotion">
+                    </div>
+                    <a href="#">
+                        <div class="wrapper-product-card-img">
+                            <img src="./assets/product-fari-1.png" alt="Product">
+                        </div>
+                        <div class="wrapper-product-card-information">
+                            <h3>Fari Collagen 100 G
+                                จำนวน 1 ซอง ปริมาณ 100 กรัม
+                                ผลิตจากปลาและนำเข้าจากญี่ปุ่น 100%</h3>
+                            <div class="wrapper-product-information-price">
+                                <div class="product-price-normal">
+                                    <span>890.-</span>
+                                    <div class="cross-price-normal"></div>
+                                </div>
+                                <span class="product-price-promotion">
+                                    590.-
+                                </span>
+                            </div>
+                            <button>สั่งซื้อ</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="products-card-item">
+                    <!-- <div class="product-promotion-icon">
+                        <img src="./assets/Promotion 1.svg" alt="Promotion">
+                    </div> -->
+                    <a href="#">
+                        <div class="wrapper-product-card-img">
+                            <img src="./assets/product-fari-1.png" alt="Product">
+                        </div>
+                        <div class="wrapper-product-card-information">
+                            <h3>Fari Collagen 100 G
+                                จำนวน 1 ซอง ปริมาณ 100 กรัม
+                                ผลิตจากปลาและนำเข้าจากญี่ปุ่น 100%</h3>
+                            <div class="wrapper-product-information-price">
+                                <div class="product-price-normal">
+                                    <span>890.-</span>
+                                    <div class="cross-price-normal"></div>
+                                </div>
+                                <span class="product-price-promotion">
+                                    590.-
+                                </span>
+                            </div>
+                            <button>สั่งซื้อ</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="products-card-item">
+                    <div class="product-promotion-icon">
+                        <img src="./assets/Promotion 1.svg" alt="Promotion">
+                    </div>
+                    <a href="#">
+                        <div class="wrapper-product-card-img">
+                            <img src="./assets/product-fari-1.png" alt="Product">
+                        </div>
+                        <div class="wrapper-product-card-information">
+                            <h3>Fari Collagen 100 G
+                                จำนวน 1 ซอง ปริมาณ 100 กรัม
+                                ผลิตจากปลาและนำเข้าจากญี่ปุ่น 100%</h3>
+                            <div class="wrapper-product-information-price">
+                                <div class="product-price-normal">
+                                    <span>890.-</span>
+                                    <div class="cross-price-normal"></div>
+                                </div>
+                                <span class="product-price-promotion">
+                                    590.-
+                                </span>
+                            </div>
+                            <button>สั่งซื้อ</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="products-card-item">
+                    <div class="product-promotion-icon">
+                        <img src="./assets/Promotion 1.svg" alt="Promotion">
+                    </div>
+                    <a href="#">
+                        <div class="wrapper-product-card-img">
+                            <img src="./assets/product-fari-1.png" alt="Product">
+                        </div>
+                        <div class="wrapper-product-card-information">
+                            <h3>Fari Collagen 100 G
+                                จำนวน 1 ซอง ปริมาณ 100 กรัม
+                                ผลิตจากปลาและนำเข้าจากญี่ปุ่น 100%</h3>
+                            <div class="wrapper-product-information-price">
+                                <div class="product-price-normal">
+                                    <span>890.-</span>
+                                    <div class="cross-price-normal"></div>
+                                </div>
+                                <span class="product-price-promotion">
+                                    590.-
+                                </span>
+                            </div>
+                            <button>สั่งซื้อ</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="products-card-item">
+                    <div class="product-promotion-icon">
+                        <img src="./assets/Promotion 1.svg" alt="Promotion">
+                    </div>
+                    <a href="#">
+                        <div class="wrapper-product-card-img">
+                            <img src="./assets/product-fari-1.png" alt="Product">
+                        </div>
+                        <div class="wrapper-product-card-information">
+                            <h3>Fari Collagen 100 G
+                                จำนวน 1 ซอง ปริมาณ 100 กรัม
+                                ผลิตจากปลาและนำเข้าจากญี่ปุ่น 100%</h3>
+                            <div class="wrapper-product-information-price">
+                                <div class="product-price-normal">
+                                    <span>890.-</span>
+                                    <div class="cross-price-normal"></div>
+                                </div>
+                                <span class="product-price-promotion">
+                                    590.-
+                                </span>
+                            </div>
+                            <button>สั่งซื้อ</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="products-card-item">
+                    <div class="product-promotion-icon">
+                        <img src="./assets/Promotion 1.svg" alt="Promotion">
+                    </div>
+                    <a href="#">
+                        <div class="wrapper-product-card-img">
+                            <img src="./assets/product-fari-1.png" alt="Product">
+                        </div>
+                        <div class="wrapper-product-card-information">
+                            <h3>Fari Collagen 100 G
+                                จำนวน 1 ซอง ปริมาณ 100 กรัม
+                                ผลิตจากปลาและนำเข้าจากญี่ปุ่น 100%</h3>
+                            <div class="wrapper-product-information-price">
+                                <div class="product-price-normal">
+                                    <span>890.-</span>
+                                    <div class="cross-price-normal"></div>
+                                </div>
+                                <span class="product-price-promotion">
+                                    590.-
+                                </span>
+                            </div>
+                            <button>สั่งซื้อ</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section id="follow-social-fari">
+        <a data-scroll href="#body">
+            <div class="scroll-to-top-icon">
+                <i class="bi bi-chevron-up"></i>
+                <b>TOP</b>
+            </div>
+        </a>
+        <div class="wrapper-info-follow-social">
+            <div class="info-topic-follow-social">
+                FOLLOW WITH FARI COLLAGEN
+            </div>
+            <div class="info-follow-social-lists mt-2 mb-4">
+                <a href="https://www.facebook.com/FariCollagen" target="_blank" class="follow-social-list-item">
+                    <img src="./assets/FB.svg" alt="icon">
+                </a>
+                <a href="" target="_blank" class="follow-social-list-item">
+                    <img src="./assets/Line.svg" alt="icon">
+                </a>
+                <a href="https://www.instagram.com/faricollagen/" target="_blank" class="follow-social-list-item">
+                    <img src="./assets/IG.svg" alt="icon">
+                </a>
+                <a href="https://lin.ee/jltVHyE" target="_blank" class="follow-social-list-item">
+                    <img src="./assets/Youtube.svg" alt="icon">
+                </a>
+                <a href="https://s.lazada.co.th/s.de7EQ" target="_blank" class="follow-social-list-item">
+                    <img src="./assets/Lazada.svg" alt="icon">
+                </a>
+                <a href="https://shopee.co.th/fari.collagen?smtt=0.0.9" target="_blank" class="follow-social-list-item">
+                    <img src="./assets/shopee.svg" alt="icon">
+                </a>
+            </div>
+            <div class="info-follow-social-contact">
+                <a href="tel:0842468888"><i class="bi bi-telephone-fill"></i> <img src="./assets/Tel.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright 2021 Fari Collagen All Rights Reserved. | <a target="_blank"
+                href="http://www.belongto.com/main/index.html">by Belong-To</a></p>
+    </footer>
+
+    <script type="text/javascript">
+
+        function toggleMenuNavbar() {
+            const expanded = document.getElementById('navbar-button-toggle-menu').getAttribute("aria-expanded")
+            const button = document.getElementById('button-toggle-navbar-icon')
+            if (expanded === 'true') {
+                button.className = 'bi bi-x'
+            } else {
+                button.className = 'bi bi-three-dots-vertical'
+            }
+        }
+        function changeToEnLanguage() {
+            const enButton = document.getElementById('en-button')
+            const thButton = document.getElementById('th-button')
+            enButton.classList.add('current-language');
+            thButton.classList.remove('current-language');
+        }
+        function changeToThLanguage() {
+            const thButton = document.getElementById('th-button')
+            const enButton = document.getElementById('en-button')
+            thButton.classList.add('current-language');
+            enButton.classList.remove('current-language');
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+
+
+
+
+    <script>
+        $(document).on('ready', function () {
+            $(".slide-product-similar").slick({
+                dots: false,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                useCSS: true,
+                responsive: [
+                    {
+                        breakpoint: 1440,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+            $(".slide-products-detail").slick({
+                dots: false,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                useCSS: true,
+                asNavFor: '.slider-for',
+                centerMode: false,
+                focusOnSelect: true,
+                responsive: [
+                    {
+                        breakpoint: 1440,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    }
+                ]
+            });
+
+
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slide-products-detail'
+            });
+            
+
+
+
+            $(".img_producto_container")
+                // tile mouse actions
+                .on("mouseover", function () {
+                    $(this)
+                        .children(".img_producto")
+                        .css({ transform: "scale(" + $(this).attr("data-scale") + ")" });
+                })
+                .on("mouseout", function () {
+                    $(this)
+                        .children(".img_producto")
+                        .css({ transform: "scale(1)" });
+                })
+                .on("mousemove", function (e) {
+                    $(this)
+                        .children(".img_producto")
+                        .css({
+                            "transform-origin":
+                                ((e.pageX - $(this).offset().left) / $(this).width()) * 100 +
+                                "% " +
+                                ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +
+                                "%"
+                        });
+                });
+        });
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
